@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,45 +11,125 @@
 <link rel="stylesheet" href="style.css">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
 <div class="container mt-5">
 
-<h2 class="text-center">Student Registration Form</h2>
+<div class="card shadow p-4">
+
+<h2 class="text-center text-primary">
+Student Registration Form
+</h2>
+
+<p class="text-center">
+Fill in your details below
+</p>
 
 <form id="myForm">
 
 <div class="mb-3">
+
 <label class="form-label">Full Name</label>
-<input type="text" class="form-control" id="name" required>
+
+<input type="text"
+class="form-control"
+id="name"
+placeholder="Enter your full name"
+required>
+
 </div>
 
 <div class="mb-3">
+
 <label class="form-label">Email</label>
-<input type="email" class="form-control" id="email" required>
+
+<input type="email"
+class="form-control"
+id="email"
+placeholder="Enter your email"
+required>
+
 </div>
 
 <div class="mb-3">
+
 <label class="form-label">Password</label>
-<input type="password" class="form-control" id="password" required>
+
+<input type="password"
+class="form-control"
+id="password"
+placeholder="Enter password"
+required>
+
 </div>
 
 <div class="mb-3">
+
 <label class="form-label">Course</label>
+
 <select class="form-control" id="course">
+
+<option>Select course</option>
 <option>Computer Systems Engineering</option>
 <option>Accounting</option>
 <option>Business</option>
+
 </select>
+
 </div>
 
-<button type="submit" class="btn btn-primary">Submit</button>
+<div class="mb-3">
+
+<label class="form-label">Gender</label>
+
+<br>
+
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Skills</label>
+
+<br>
+
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> Java
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Message</label>
+
+<textarea class="form-control"
+rows="3"
+placeholder="Write message">
+</textarea>
+
+</div>
+
+<button type="submit"
+class="btn btn-primary w-100">
+
+Submit Registration
+
+</button>
 
 </form>
 
-<p id="message" class="mt-3"></p>
+<p id="message"
+class="text-success text-center mt-3">
+
+</p>
+
+</div>
 
 </div>
 
